@@ -19,6 +19,7 @@ h3 {
   font-family: "Lora", serif;
   font-weight: 400;
   color: #143732;
+  margin-top: 0;
 }
 
 h1 {
@@ -36,6 +37,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
+ 
 }
 
 h3 {
@@ -46,6 +48,10 @@ h3 {
 .article-info,
 .article-read-more {
   font-size: 0.875rem;
+}
+
+.article-info {
+  margin: 1.7em 0;
 }
 
 .article-read-more {
@@ -97,34 +103,29 @@ Layout
 
 .container-flex {
   display: flex;
-  justify-content: space-between;  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 header {
   background: #f8f8f8;
-  padding: 2em 0;text-align: center;
+  padding: 2em 0;
+  text-align: center;
 }
 
-
-@media (min-width:675px) {
-  .container-flex{
+@media (min-width: 675px) {
+  .container-flex {
     flex-direction: row;
   }
 
-  main{
+  main {
     width: 70%;
   }
 
-  aside{
+  aside {
     width: 20%;
   }
-  
 }
-
-
-
-
-
 
 /* navigation */
 
@@ -175,9 +176,24 @@ footer {
   margin: 0 auto;
 }
 
-/*.article-recent {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+/* article */
+
+.article-featured {
+  border-bottom: #707070 1.8px solid;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
-*/
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4em;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+.article-recent-secondary {
+  order: 1;
+}
