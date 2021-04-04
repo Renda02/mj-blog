@@ -2,7 +2,11 @@ body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
-  
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /* =================
@@ -14,14 +18,12 @@ h2,
 h3 {
   font-family: "Lora", serif;
   font-weight: 400;
-  color: #143744;
- 
+  color: #143732;
 }
 
 h1 {
-   margin: 0;
+  margin: 0;
   font-size: 2rem;
- 
 }
 
 .subtitle {
@@ -34,8 +36,6 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  
- 
 }
 
 h3 {
@@ -44,44 +44,45 @@ h3 {
 }
 
 .article-info,
-.article-read-more{font-size: 0.875rem;}
+.article-read-more {
+  font-size: 0.875rem;
+}
 
 .article-read-more {
-  font-weight: 700;
+  font-weight: 700starting;
   font-size: 0.875rem;
   color: #1792d2;
 }
 
-.article-links{
-    color: #1487d4;
+.article-links {
+  color: #1487d4;
 }
 
 .article-links:hover,
-.article-links:focus{
-    color: #143774;
-    text-decoration: underline wavy;
+.article-links:focus {
+  color: #143774;
+  text-decoration: underline wavy;
 }
 
 .article-read-more:hover,
 .article-read-more:focus {
-    color: #143732;
-    text-decoration: underline wavy;
-    font-weight: 700;
+  color: #143732;
+  text-decoration: underline wavy;
+  font-weight: 700;
 }
-
 
 .article-info {
   font-weight: lighter;
   font-size: 0.875rem;
 }
 
-.footer-text{
-    color: #f8f8f8;
-    text-align: center;
+.footer-text {
+  color: #f8f8f8;
+  text-align: center;
 }
 
-strong{
-    font-weight: 700;
+strong {
+  font-weight: 700;
 }
 
 /* =================
@@ -94,31 +95,36 @@ Layout
   margin: 0 auto;
 }
 
-.container-nav
-{
+.container-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  flex-direction: column;
 }
 
 header {
   background: #f8f8f8;
-  padding: 2em 0;
+  padding: 2em 0;text-align: center;
 }
 
-@media (max-width: 675px) {
-  .container-nav {
-    flex-direction: column;
+
+@media (min-width:675px) {
+  .container-flex{
+    flex-direction: row;
   }
 
-  header {
-    text-align: center;
+  main{
+    width: 70%;
   }
+
+  aside{
+    width: 20%;
+  }
+  
 }
 
 
-img{
-width: 65%;
-}
+
+
+
 
 /* navigation */
 
@@ -167,13 +173,11 @@ footer {
   background: #143774;
   height: 30%;
   margin: 0 auto;
-  
 }
 
-
-
-.article-recent {
+/*.article-recent {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+*/
