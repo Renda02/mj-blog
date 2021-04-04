@@ -123,7 +123,8 @@ header {
   }
 
   aside {
-    width: 20%;
+    width: 25%;
+    min-width: 250px;
   }
 }
 
@@ -172,7 +173,7 @@ nav a:focus {
 
 footer {
   background: #143774;
-  height: 30%;
+ padding: 2em;
   margin: 0 auto;
 }
 
@@ -196,4 +197,82 @@ footer {
 
 .article-recent-secondary {
   order: 1;
+}
+
+.article-recent .article-read-more{
+  margin-bottom: 3em;
+}
+
+
+@media (min-width: 675px) {
+.article-recent{
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.article-recent-main {
+  width: 65%;
+}
+
+.article-recent-secondary {
+  width: 30%;
+}
+
+.article-featured{
+  display: flex;
+  flex-direction: column;
+}
+
+.article-image {
+  order: -2;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+.article-info {
+  order: -1;
+}
+
+  /* .article-recent-main{
+    margin-top: -3em;
+  }
+
+  .article-info{
+    text-align: right;
+  } */
+  
+}
+
+/* Widget */
+
+.sidebar-widget{
+  border: 10px solid #efefef ;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.widget-image{
+  margin-bottom: 1.5em;
+}
+
+
+
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.widget-title{
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.widget-recent{
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-image{
+  order: -1;
 }
