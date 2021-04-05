@@ -9,6 +9,14 @@ img {
   display: block;
 }
 
+.image-full {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 2em;
+}
+
 /* =================
 Typography
 ================= */
@@ -37,7 +45,6 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
- 
 }
 
 h3 {
@@ -98,7 +105,7 @@ Layout
 .container {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 .container-flex {
@@ -109,7 +116,7 @@ Layout
 
 header {
   background: #f8f8f8;
-  padding: 2em 0;
+  padding: 1.5em 0;
   text-align: center;
 }
 
@@ -173,7 +180,7 @@ nav a:focus {
 
 footer {
   background: #143774;
- padding: 2em;
+  padding: 2em;
   margin: 0 auto;
 }
 
@@ -199,39 +206,38 @@ footer {
   order: 1;
 }
 
-.article-recent .article-read-more{
+.article-recent .article-read-more {
   margin-bottom: 3em;
 }
 
-
 @media (min-width: 675px) {
-.article-recent{
- flex-direction: row;
- justify-content: space-between;
-}
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.article-recent-main {
-  width: 65%;
-}
+  .article-recent-main {
+    width: 65%;
+  }
 
-.article-recent-secondary {
-  width: 30%;
-}
+  .article-recent-secondary {
+    width: 30%;
+  }
 
-.article-featured{
-  display: flex;
-  flex-direction: column;
-}
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
 
-.article-image {
-  order: -2;
-  min-height: 250px;
-  object-fit: cover;
-}
+  .article-image {
+    order: -2;
+    min-height: 250px;
+    object-fit: cover;
+  }
 
-.article-info {
-  order: -1;
-}
+  .article-info {
+    order: -1;
+  }
 
   /* .article-recent-main{
     margin-top: -3em;
@@ -240,39 +246,36 @@ footer {
   .article-info{
     text-align: right;
   } */
-  
 }
 
 /* Widget */
 
-.sidebar-widget{
-  border: 10px solid #efefef ;
+.sidebar-widget {
+  border: 10px solid #efefef;
   margin-bottom: 2em;
   padding: 1em;
 }
 
-.widget-image{
+.widget-image {
   margin-bottom: 1.5em;
 }
 
-
-
 .widget-title,
 .widget-recent-post-title {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-.widget-title{
+.widget-title {
   font-size: 1rem;
   font-weight: 700;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.widget-recent{
+.widget-recent {
   display: flex;
   flex-direction: column;
 }
 
-.widget-image{
+.widget-image {
   order: -1;
 }
