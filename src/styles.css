@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
+  line-height: 1.6;
 }
 
 img {
@@ -35,12 +36,12 @@ h1 {
   font-size: 2rem;
 }
 
-.subtitle {
+/*.subtitle {
   font-weight: 700;
   color: #1792d2;
   font-size: 0.75rem;
   margin: 0;
-}
+}*/
 
 h2 {
   font-size: 1.5rem;
@@ -51,6 +52,7 @@ h3 {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 
 .article-info,
 .article-read-more {
@@ -65,6 +67,8 @@ h3 {
   font-weight: 700starting;
   font-size: 0.875rem;
   color: #1792d2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .article-links {
@@ -89,10 +93,7 @@ h3 {
   font-size: 0.875rem;
 }
 
-.footer-text {
-  color: #f8f8f8;
-  text-align: center;
-}
+
 
 strong {
   font-weight: 700;
@@ -116,7 +117,7 @@ Layout
 
 header {
   background: #f8f8f8;
-  padding: 1.5em 0;
+  padding: 1em 0;
   text-align: center;
 }
 
@@ -153,6 +154,8 @@ nav a {
   color: #707070;
   font-weight: 700;
   padding: 0.25em 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 nav a:hover,
@@ -180,8 +183,15 @@ nav a:focus {
 
 footer {
   background: #143774;
+  color: ragba(255,255,255,0.55);
   padding: 2em;
   margin: 0 auto;
+}
+
+.footer-text {
+  color: #f8f8f8;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 /* article */
@@ -263,12 +273,14 @@ footer {
 .widget-title,
 .widget-recent-post-title {
   font-size: 1rem;
+  line-height: 1.3;
 }
 
 .widget-title {
   font-size: 1rem;
   font-weight: 700;
   font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1px;
 }
 
 .widget-recent {
